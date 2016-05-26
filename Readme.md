@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Альберт Мухаметшин](https://up.htmlacademy.ru/adaptive/7/user/134922).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Болтян`.
 
 ---
 
