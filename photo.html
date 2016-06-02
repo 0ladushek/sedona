@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
+<body>
+	<nav class="main-menu">
+		<ul class="main-menu__items">
+			<li class="main-menu__item">ГЛАВНАЯ</li>
+			<li class="main-menu__item">ФОТО И ВИДЕО</li>
+			<li class="main-menu__item">ФОРМА ОТЗЫВА</li>
+			<li class="main-menu__item">HTML ACADEMY</li>
+		</ul>
+	</nav>
+	
+	<header class="main-header">
+		<img src="#" alt="" class="logo">
+		<button class="open-menu"></button>
+		<img src="#" alt="" class="sedona">
+	</header>
+	
+	<div class="recall">
+		<div class="recall__item">
+			<h3 class="recall__title">ОСТАВЬТЕ СТВОЙ ОТЗЫВ</h3>
+			<p class="reacall__descr">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+		</div>
+		<form action="">
+			<div class="recall__item">
+				<h3 class="recall__title">Представтесь пожалуйста:</h3>
+				<label for="un">ИМЯ:</label>
+				<input type="text" name="user-name" id="un" class="user-name" placecholder="Петр">
+				<label for="ln">Фамилия:</label>
+				<input type="text" name="last-name" id="ln" class="user-last-name" placecholder="Иванов">
+				<label for="partro">Отчество:</label>
+				<input type="text" name="partro" id="partro" class="user-partro" placecholder="Александрович">
+			</div>
+			<div class="recall__item">
+				<h3 class="recall__title">Контактаня информация:</h3>
+				<label for="un">Контактый телефон:</label>
+				<input type="text" name="user-name" id="un" class="user-phone" placecholder="Введите телефон">
+				<span class="error-input">Ошибка, переправерьте номер</span>
+				<label for="ln">Электронная почта:</label>
+				<input type="text" name="last-name" id="ln" class="user-email" placecholder="Введите e-mail">
+			</div>
+			<div class="recall__item">
+				<h3 class="recall__title">Ваше общее впечатление:</h3>
+				<input type="radio" name="user-eval" id="user-pos">
+				<label for="user-pos">Скорее положительное</label>
+				<input type="radio" name="user-eval" id="user-neg">
+				<label for="user-neg">Скорее отрицательное</label>
+				<input type="radio" name="user-eval" id="user-hindered">
+				<label for="user-hindered">Затрудняюсь ответить</label>
+			</div>
+			<div class="recall__item">
+				<h3 class="recall__title">Посещенные достопермечальности:</h3>
+				<input type="checkbox" name="devil-bridge" id="devil-bridge">
+				<label for="devil-bridge">Мост Дьявола</label>
+				<input type="checkbox" name="slide-park" id="slide-park">
+				<label for="slide-park">Слай-парк</label>
+				<input type="checkbox" name="mount-bell" id="mount-bell">
+				<label for="mount-bell">Гора-Колокол</label>
+				<input type="checkbox" name="red-mount" id="red-mount">
+				<label for="red-mount">Красные скалы</label>
+			</div>
+			<div class="recall__item">
+				<h3 class="recall__title">Опишите свои эмоции:</h3>
+				<textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+				<input type="submit" class="btn" value="ОТПРАВИТЬ ОТЗЫВ">
+			</div>
+		</form>
+	</div>
+
+	<footer class="main-footer">
+		<h3 class="hashtag">#VISITSEDONA</h3>
+		<div class="socials">
+			<a href="" class="btn btn--twitter">Мы в твитере</a>
+			<a href="" class="btn btn--fb">Мы в фейсбуке</a>
+			<a href="" class="btn btn--ytube">Мы в ютюбе</a>
+		</div>
+		<div class="autor">
+			<span>РАЗРАБОТАНО</span>
+		</div>
+	</footer>
+</body>
+</html>
