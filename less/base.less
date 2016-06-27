@@ -1,0 +1,44 @@
+body {
+  font-family: @ptsans;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background: #f2f2f2;
+  color: @body-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  background-color: white;
+
+  @media @desktop-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0, 0.2);
+  }
+}
+
+.btn {
+  background-color: #5496bd;
+  color: white;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: #3e84ae;
+}
+
+.btn:active {
+  color: rgba(255,255,255, 0.3);
+}
+
+.btn:disabled,
+.btn.disabled {
+  background-color: #e5e5e5;
+}

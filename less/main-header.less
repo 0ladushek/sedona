@@ -1,16 +1,60 @@
 .main-header {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: normal;
-	background: url("../img/bg-back-mobile@1x.jpg") no-repeat ;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.about {
-	.about__title {
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-	.about__descr {
-		text-transform: uppercase;
-	}
+
+.main-header__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 100;
+  width: 23px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &--closed:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: @blue;
+    box-shadow: 0 8px 0 0 @blue,
+                0 16px 0 0 @blue;
+  }
+
+  &--open:before,
+  &--open:after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 10px;
+    width: 28px;
+    height: 4px;
+    background-color: white;
+  }
+
+  &--open:before {
+    transform: rotate(45deg);
+  }
+
+  &--open:after {
+    transform: rotate(-45deg);
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+@media @tablet-width {
+  .main-header__toggle {
+    display: none;
+  }
 }
