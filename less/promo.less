@@ -5,6 +5,10 @@
   margin-bottom: 40px;
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 767px auto;
+  }
 
   &:after {
     content: "";
@@ -44,22 +48,25 @@
 	.promo {
     margin-top: 0;
     padding-top: 0;
-		min-height: 518px; // temp height
+    min-height: 518px;
     margin-bottom: 50px;
     background-size: cover;
 
-
     &:after {
-      display: none;
+      height: 65px;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 8px;
+      // background-size: 100%;
+      // height: 60px;
+      // outline: 2px solid red;
     }
 
     &--photo {
-      min-height: 290px; //tmp height
+      min-height: 290px;
       margin-bottom: 75px;
     }
 
     &--form {
-      min-height: 290px; //tmp height
+      min-height: 290px;
       margin-bottom: 75px;
     }
 	}
@@ -81,14 +88,24 @@
 //DESKTOP WIDTH
 @media @desktop-width {
   .promo {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    @media @retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 767px auto;
+    }
     &--form {
-      min-height: 300px; //tmp height
+      min-height: 300px;
       margin-bottom: 112px;
     }
 
     &--photo {
-      min-height: 300px; //tmp height
+      min-height: 300px;
       margin-bottom: 112px;
+    }
+    &:after {
+      height: 65px;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center 8px;
+      // height: 65px;
     }
   }
 
