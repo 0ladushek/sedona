@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 build/
+=======
+>>>>>>> module8-task1
 node_modules/
 .DS_Store
 Thumbs.db
@@ -9,5 +12,8 @@ Thumbs.db
 *.psd
 *.ai
 *.pdf
+<<<<<<< HEAD
 css/*.css
+=======
+>>>>>>> module8-task1
 
